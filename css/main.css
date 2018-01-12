@@ -1,0 +1,168 @@
+/*********************************
+            DEFAULTS
+*********************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: whitesmoke;
+}
+
+
+
+/*********************************
+           NAVIGATION
+*********************************/
+.page{
+    height:100%;
+}
+
+.active{
+
+}
+
+.title{ 
+    color:white;
+    background-color: firebrick;
+    text-shadow: 1px 3px 5px rgba(1,1,1,0.5);
+    font-weight: 400;
+    font-size: 3rem;
+    max-width: 600px;
+    padding:0.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(1,1,1,0.5);
+    margin:0 auto;
+    text-align: center;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+#search-results{
+    margin-top:5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+/*********************************
+           SEARCH BAR
+*********************************/
+.search{
+    position: fixed;
+    z-index: 100;
+    top:0;
+    right:0;
+    left:0;
+    height: 4rem;
+    background-color: white;
+    box-shadow: 2px 1px 10px lightgrey;
+}
+
+#search-input{
+    z-index: 110;
+    height:4rem;
+    width:100%;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size:1.8rem;
+    text-align: center;
+    border-style: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+#search-button{
+    position:absolute;
+    z-index: 120;
+    height:4rem;
+    width:5rem;
+    right:0;
+    top:0;
+    padding:0.7rem;
+    background-color:white;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    cursor:pointer;
+}
+#back-button{
+    position:absolute;
+    z-index: 120;
+    height:4rem;
+    width:6rem;
+    left:0;
+    top:0;
+    padding:0.7rem;
+    background-color:white;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    cursor:pointer;
+    display:none;
+}
+
+/*********************************
+          SEARCH RESULTS
+*********************************/
+
+.movie{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom:1.2rem;
+    overflow: auto;
+    clear:both;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    cursor: pointer;
+}
+
+.poster{
+    position: relative;
+    margin-right:30px;
+    float: left;
+    width:200px;
+    height:auto;
+}
+
+.attribution img{
+    display: block;
+    width:200px;
+    margin: 0 auto;
+}
+
+#movieTitle{
+    color:black;
+    font-family: "Roboto Slab", Times New Roman, serif;
+    font-size: 1.8rem;
+    padding-top:1.5rem;
+}
+
+#movieDes{
+    display: block;
+    padding-top: 1rem;
+    padding-right:2rem;
+    font-size:  1rem;
+    overflow: hidden;
+}
+
+#releaseDate{
+    display: inline;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#rating{
+    display: inline;
+    font-size: 1rem;
+}
+
+
+
+/*********************************
+        RECOMMENDATIONS
+*********************************/
+
+.recText{
+    display:none;
+}

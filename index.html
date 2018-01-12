@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    
+</head>
+
+<body>
+    <main>
+
+        <header class="search">
+
+
+            <!---
+            <div id="search-button"><img id="sb-img" class="iconic iconic-md" data-src="./img/magnifying-glass-sm.svg" alt="Search" title="Search"/></div>
+            -->
+        
+
+           <div id="back-button">
+                <img id="back-button" class="iconic iconic-md" data-src="./img/x.svg" alt="Search" title="Back" />
+            </div>
+            
+            <div id="search-button">
+                <img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass-sm.svg" alt="Search" title="Search" />
+            </div>
+
+            <input type="text" id="search-input" placeholder="search" />
+
+        </header>
+
+        <div class="page active" id="search-results">
+            <section class="title">
+                <h1>FILM FINDER</h1>
+            </section>
+            <p class="recText">These are your recommended results.</p>
+            <section class="content">
+            
+            </section>
+            
+            <div class="attribution" id="attribution">
+                    <img src="./img/powered-by-rectangle-blue.svg" alt="The Movie DB" />
+                </div>
+        </div>
+        
+        <div class="page" id="recommend-results">
+            
+        </div>
+
+    </main>
+
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
